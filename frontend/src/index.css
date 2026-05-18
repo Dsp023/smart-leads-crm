@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply transition-colors duration-200 bg-slate-50 text-slate-900 antialiased;
+  }
+  
+  .dark body {
+    @apply bg-slate-950 text-slate-100;
+  }
+}
+
+/* Crisp utility panels (Vercel/Linear style) */
+.premium-card {
+  @apply bg-white border border-slate-200 rounded-xl shadow-sm transition-all duration-150 hover:border-slate-300;
+}
+
+.dark .premium-card {
+  @apply bg-slate-900/60 border border-slate-800/80 rounded-xl shadow-none hover:border-slate-700/80;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 rounded-sm hover:bg-slate-300 transition-colors;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-slate-800 rounded-sm hover:bg-slate-700;
+}
