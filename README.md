@@ -48,7 +48,7 @@ A production-grade, full-stack **Customer Relationship Management (CRM) & Lead I
 ## 📂 Project Directory Structure
 
 ```text
-d:/assignment/
+d:/smart-leads-crm/
 ├── backend/
 │   ├── src/
 │   │   ├── config/          # MongoDB database connection client
